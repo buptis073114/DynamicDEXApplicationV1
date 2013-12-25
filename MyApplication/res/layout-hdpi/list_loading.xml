@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_loading_view" android:background="@drawable/homepage_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/listLoadingProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLargeInverse" mce_style="?android:attr/progressBarStyleLargeInverse" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/listLoadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/loading_list" android:layout_below="@id/listLoadingProgressBar" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+</RelativeLayout>

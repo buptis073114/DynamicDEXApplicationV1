@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewSwitcher android:id="@id/umeng_xp_display_switch" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/umeng_xp_display_first" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/umeng_xp_banner_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/umeng_xp_standalone_bg" android:scaleType="fitXY" />
+            <ImageView android:id="@id/umeng_xp_appIcon0" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/umeng_xp_zhanwei" android:layout_centerVertical="true" />
+            <ViewFlipper android:id="@id/umeng_xp_flipper" android:layout_width="260.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:inAnimation="@anim/umeng_xp_push_up_in" android:outAnimation="@anim/umeng_xp_push_up_out" android:flipInterval="10000" android:layout_toRightOf="@id/umeng_xp_appIcon0" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                <include layout="@layout/umeng_xp_component_flipper_content" />
+            </ViewFlipper>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/umeng_xp_display_second" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/umeng_xp_banner_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="67.0dip" android:src="@drawable/umeng_xp_standalone_bg" android:scaleType="fitXY" />
+            <ImageView android:id="@id/umeng_xp_appIcon0" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/umeng_xp_zhanwei" android:layout_centerVertical="true" />
+            <ViewFlipper android:id="@id/umeng_xp_flipper" android:layout_width="260.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:inAnimation="@anim/umeng_xp_push_up_in" android:outAnimation="@anim/umeng_xp_push_up_out" android:flipInterval="10000" android:layout_toRightOf="@id/umeng_xp_appIcon0" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                <include layout="@layout/umeng_xp_component_flipper_content" />
+            </ViewFlipper>
+        </RelativeLayout>
+    </ViewSwitcher>
+</RelativeLayout>

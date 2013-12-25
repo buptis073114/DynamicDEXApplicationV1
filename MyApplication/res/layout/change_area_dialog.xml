@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/dialog_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff68ad2e" android:id="@id/top_title" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="选择您的地域" />
+    <LinearLayout android:id="@id/top_devider" android:background="#ff68ad2e" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/top_title" />
+    <LinearLayout android:id="@id/area_list_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:layout_below="@id/top_devider">
+        <com.shoujiduoduo.ringtone.util.IndexListView android:id="@id/area_list" android:focusable="true" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#20c0c0c0" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" />
+    </LinearLayout>
+</RelativeLayout>

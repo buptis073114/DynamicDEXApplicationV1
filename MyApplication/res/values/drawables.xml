@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="homepage_bkg_color">#ffeeeae9</item>
+    <item type="drawable" name="home_list_button_bkg">#ffe1e1e1</item>
+    <item type="drawable" name="home_list_button_text_color">#ff757575</item>
+    <item type="drawable" name="home_list_button_text_selectcolor">#ff68ad2e</item>
+    <item type="drawable" name="list_bkg_color1">#fff7f7f7</item>
+    <item type="drawable" name="list_bkg_color2">#fff0f0f0</item>
+    <item type="drawable" name="list_bkg_color3">#ffffffff</item>
+    <item type="drawable" name="list_bkg_color_v2">#fff4f2f3</item>
+    <item type="drawable" name="list_bkg_color_pressed">#ffb1cb79</item>
+    <item type="drawable" name="baidu_cloud_panel_color">#ffd1cfcf</item>
+    <item type="drawable" name="share_menu_bkg_color">#c0181818</item>
+    <item type="drawable" name="sahre_menu_divider_color">#80181818</item>
+    <item type="drawable" name="transparent_bkg">#00ffffff</item>
+</resources>

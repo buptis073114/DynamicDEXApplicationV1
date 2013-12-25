@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/umeng_xp_rootId" android:background="#ffe7d6bc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/umeng_xp_message" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff4b4b4b" android:gravity="center" android:background="@drawable/umeng_xp_recommend_titile_bg" android:layout_width="160.0dip" android:layout_height="45.0dip" android:shadowColor="#ffeeeeee" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:layout_centerVertical="true" />
+        <Button android:gravity="center_vertical" android:id="@id/umeng_xp_back" android:background="@drawable/umeng_xp_selector_back" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="50.0dip" android:layout_height="45.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/umeng_xp_template_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/umeng_xp_message" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/umeng_xp_pb" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/umeng_xp_loading" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

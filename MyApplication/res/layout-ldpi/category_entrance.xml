@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_entrance_panel" android:background="@drawable/homepage_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffeeeae9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.25">
+        <ImageButton android:id="@id/btn_pop_songs" android:background="#ffeeeae9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_pop_songs_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/btn_movie_and_ads" android:background="#ffeeeae9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_movie_and_ads_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffeeeae9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_weight="0.25">
+        <ImageButton android:id="@id/btn_comic_and_game" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_comic_and_game_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/btn_sms" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_sms_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffeeeae9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.25">
+        <ImageButton android:id="@id/btn_dance_music" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_dance_music_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/btn_alternative" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_alternative_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffeeeae9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.25">
+        <ImageButton android:id="@id/btn_user_upload" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_user_upload_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+        <ImageButton android:id="@id/btn_others" android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_others_bkg" android:scaleType="centerInside" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

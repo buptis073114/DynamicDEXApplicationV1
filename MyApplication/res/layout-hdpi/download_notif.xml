@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/down_icon" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_download" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/notif_cancel_download" android:background="#00ffffff" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/btn_notif_cancel_download" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/notif_cancel_download" android:layout_toRightOf="@id/down_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/down_tv" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/down_progress_bar" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_below="@id/down_tv" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

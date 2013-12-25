@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/framework" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/head_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/backButton" android:background="#00ffffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_back_new" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:textColor="@*android:color/white" android:id="@id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homepage" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/startSettingButton" android:background="#00ffffff" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/btn_start_setting_bkg" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/navigatorPanel" android:background="@drawable/navigator_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/buttonHomepage" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_homepage_select" android:layout_weight="0.25" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/buttonCategory" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_category" android:layout_weight="0.25" />
+        <ImageView android:id="@id/buttonSearch" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_search" android:layout_weight="0.25" />
+        <ImageView android:id="@id/buttonMyRingtone" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_my_ringtone" android:layout_weight="0.25" />
+        <ImageView android:id="@id/buttonMoreOptions" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/btn_more_options" android:layout_weight="0.25" />
+    </LinearLayout>
+    <com.shoujiduoduo.ringtone.activity.RingToneDuoduoFramework android:id="@id/sceneGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/navigatorPanel" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:id="@id/contact_item_alpha" android:background="#ff7e7f78" android:paddingLeft="15.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/contact_item_alpha">
+        <CheckBox android:id="@id/contact_item_check" android:background="@drawable/checkbox_bk" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/contact_item_personring" android:background="@drawable/btn_shape_white_bkg" android:focusable="false" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/restore_person_ring" android:layout_toLeftOf="@id/contact_item_check" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/contact_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/contact_item_personring" android:layout_alignParentLeft="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:id="@id/contact_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/contact_item_ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <Button android:id="@id/contact_item_defaultring" android:background="@drawable/btn_shape_white_bkg" android:focusable="false" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/restore_default_ring" android:layout_toLeftOf="@id/contact_item_check" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

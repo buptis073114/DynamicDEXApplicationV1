@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/more_options_layout" android:background="@drawable/homepage_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/more_options_entrance_panel" android:background="@drawable/homepage_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/more_options_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/user_feedback_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/duoduo_family_panel" android:background="@drawable/homepage_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/duoduo_family_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#000000ff" android:dividerHeight="2.0px" />
+        <ImageView android:id="@id/duoduo_family_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:src="@*android:color/darker_gray" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/loading_duoduo_family_panel" android:background="@drawable/homepage_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/loadListProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLargeInverse" mce_style="?android:attr/progressBarStyleLargeInverse" />
+        <TextView android:textColor="@*android:color/black" android:id="@id/loadListText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/loading_duoduo_family_prompt" android:layout_below="@id/loadListProgressBar" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/loading_duoduo_family_fail_panel" android:background="@drawable/homepage_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/load_duoduo_family_fail_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_duoduo_family_fail_pic" android:layout_centerInParent="true" />
+        <TextView android:textColor="@*android:color/black" android:id="@id/load_duoduo_family_fail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/loading_duoduo_family_fail_prompt" android:layout_below="@id/load_duoduo_family_fail_img" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>
+    <include layout="@layout/about_info_layout" />
+</RelativeLayout>

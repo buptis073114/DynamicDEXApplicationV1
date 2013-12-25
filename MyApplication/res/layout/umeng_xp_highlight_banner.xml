@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/umeng_xp_banner" android:background="@drawable/umeng_xp_highlight_banner_bg" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/umeng_xp_icon_area" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/umeng_xp_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/umeng_xp_zhanwei" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/umeng_xp_new_tip" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/umeng_xp_new_tip_button" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/umeng_xp_highlight_item_bg_selector" android:paddingLeft="15.0dip" android:paddingTop="3.0dip" android:paddingRight="15.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" android:layout_toRightOf="@id/umeng_xp_icon_area">
+        <TextView android:textSize="14.0sp" android:textColor="@drawable/umeng_xp_list_item_text_selector" android:id="@id/umeng_xp_name" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="开心听" android:lines="1" />
+        <View android:background="@null" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#fff3f3f3" android:ellipsize="marquee" android:id="@id/umeng_xp_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/umeng_xp_detail365" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff777777" android:id="@id/umeng_xp_open_type" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="查看" android:lines="1" android:layout_alignParentRight="true" />
+    <Button android:textSize="8.0sp" android:textColor="#fff3f3f3" android:gravity="top|left|center" android:id="@id/umeng_xp_ad_action_btn" android:background="@drawable/umeng_xp_ad_action_download_clicked" android:paddingLeft="12.0dip" android:paddingTop="13.0dip" android:layout_width="45.0dip" android:layout_height="fill_parent" android:text="下载" android:lines="1" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" android:layout_alignParentRight="true" />
+</RelativeLayout>

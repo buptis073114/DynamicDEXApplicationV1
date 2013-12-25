@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.umeng.xp.view.widget.SwipeView android:id="@id/umeng_xp_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+    <com.umeng.xp.view.widget.SwipeViewPointer android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/umeng_xp_gallery_page_pointer" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/about_info_panel" android:background="@drawable/homepage_bkg_color" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="@*android:color/black" android:id="@id/about_app_name" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_title" android:layout_alignParentTop="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@*android:color/black" android:id="@id/about_release_date" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/release_date" android:layout_below="@id/about_app_name" />
+    <TextView android:textSize="18.0dip" android:textColor="@*android:color/black" android:id="@id/about_partner" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/partner" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="18.0dip" android:textColor="@*android:color/black" android:autoLink="email" android:id="@id/about_app_email" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Email" android:layout_above="@id/about_partner" />
+    <TextView android:textSize="18.0dip" android:textColor="@*android:color/black" android:id="@id/about_app_qq" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/QQ" android:layout_above="@id/about_app_email" />
+    <ImageView android:id="@id/about_divider" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:src="@*android:color/darker_gray" android:layout_above="@id/about_app_qq" />
+    <ScrollView android:id="@id/about_scroll" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/about_divider" android:layout_below="@id/about_release_date"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="16.0dip" android:textColor="@*android:color/black" android:id="@id/about_app_intro" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

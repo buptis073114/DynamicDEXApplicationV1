@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/user_feedback_banner" android:background="#ff68ad2e" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:id="@id/user_feedback_back" android:background="@drawable/btn_back_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:id="@id/user_feedback_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户反馈" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/user_feedback_banner">
+        <include layout="@layout/user_feedback_layout" />
+    </RelativeLayout>
+</RelativeLayout>

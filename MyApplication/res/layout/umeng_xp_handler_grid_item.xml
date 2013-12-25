@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/umeng_xp_icon_area" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/umeng_xp_shadow_bg" android:scaleType="fitXY" />
+        <ImageView android:id="@id/umeng_xp_handler_grid_item_icon" android:paddingLeft="2.0dip" android:paddingTop="5.0dip" android:paddingRight="2.0dip" android:paddingBottom="1.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/umeng_xp_zhanwei" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/umeng_xp_new_tip" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="18.0dip" android:src="@drawable/umeng_xp_new_tip_button" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ff818181" android:ellipsize="middle" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/umeng_xp_handler_grid_item_tv" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="12345" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="1.0" android:layout_below="@id/umeng_xp_icon_area" />
+</RelativeLayout>

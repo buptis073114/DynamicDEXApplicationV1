@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/list_failed_view" android:background="@drawable/homepage_bkg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_failed_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_list_fail_pic" android:layout_centerInParent="true" />
+    <TextView android:textColor="@*android:color/black" android:id="@id/list_failed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/load_list_fail_string" android:layout_below="@id/list_failed_img" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/divider" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="17.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/umeng_xp_back" android:text="收起" android:layout_weight="1.0" style="@style/umeng_xp_grad_but" />
+    <Button android:textSize="17.0dip" android:textColor="#ff666666" android:gravity="center" android:id="@id/umeng_xp_more" android:text="更多" android:layout_weight="1.0" style="@style/umeng_xp_grad_but" />
+</LinearLayout>

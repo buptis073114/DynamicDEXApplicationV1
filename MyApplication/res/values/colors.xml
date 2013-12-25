@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#88000000</color>
+    <color name="list_view_selected">#ff5bcde3</color>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/cailing_manage_banner" android:background="#ff68ad2e" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <Button android:id="@id/cailing_manage_back" android:background="@drawable/btn_back_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cailing_manage" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cailing_manage_bottom_control" android:background="#ffe7e7e7" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="#ff5f5f5f" android:id="@id/cailing_bottom_tips" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="中国移动允许您拥有多个彩铃，设置、删除这些彩铃完全免费。" />
+    </LinearLayout>
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/cailing_manage_bottom_control" android:layout_below="@id/cailing_manage_banner">
+        <ListView android:id="@id/cailing_list" android:background="@drawable/homepage_bkg_color" android:focusable="true" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#20c0c0c0" android:dividerHeight="1.0dip" android:fastScrollEnabled="true" />
+        <RelativeLayout android:id="@id/cailing_failed_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/list_failed_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_list_fail_pic" android:layout_centerInParent="true" />
+            <TextView android:textColor="@*android:color/black" android:id="@id/list_failed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/load_list_fail_string" android:layout_below="@id/list_failed_img" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/cailing_loading_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/listLoadingProgressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLargeInverse" />
+            <TextView android:textColor="@*android:color/black" android:id="@id/listLoadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/loading_list_cailing" android:layout_below="@id/listLoadingProgressBar" android:layout_centerHorizontal="true" style="@android:style/TextAppearance.Medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/homepage_layout" android:background="@drawable/homepage_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.shoujiduoduo.ringtone.activity.DuoduoAdContainer android:id="@id/ad_container" android:background="@drawable/homepage_bkg_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/close_ad_button" android:background="#00ffffff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_ad" android:layout_alignParentRight="true" />
+    </com.shoujiduoduo.ringtone.activity.DuoduoAdContainer>
+    <RelativeLayout android:id="@id/home_lists" android:background="@drawable/homepage_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ad_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/home_lists_buttons" android:background="@drawable/home_list_button_bkg" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <Button android:textSize="16.0dip" android:textColor="@drawable/home_list_button_text_color" android:gravity="center" android:id="@id/btn_list1" android:background="@drawable/home_list_button_bkg" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="最热" android:layout_weight="0.25" />
+            <Button android:textSize="16.0dip" android:textColor="@drawable/home_list_button_text_color" android:gravity="center" android:id="@id/btn_list2" android:background="@drawable/home_list_button_bkg" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="最新" android:layout_weight="0.25" />
+            <Button android:textSize="16.0dip" android:textColor="@drawable/home_list_button_text_color" android:gravity="center" android:id="@id/btn_list3" android:background="@drawable/home_list_button_bkg" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="彩铃榜" android:layout_weight="0.25" />
+            <Button android:textSize="16.0dip" android:textColor="@drawable/home_list_button_text_color" android:gravity="center" android:id="@id/btn_list4" android:background="@drawable/home_list_button_bkg" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="飙升榜" android:layout_weight="0.25" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_seperator" android:background="@drawable/home_list_button_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/page_bar" android:scaleType="matrix" android:layout_below="@id/home_lists_buttons" />
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="@drawable/homepage_bkg_color" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:flipInterval="30" android:layout_below="@id/img_seperator" />
+    </RelativeLayout>
+</RelativeLayout>

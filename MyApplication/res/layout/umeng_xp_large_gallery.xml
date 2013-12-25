@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/umeng_xp_gallery_entity" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.umeng.xp.view.UGallery android:id="@id/umeng_xp_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animationDuration="300" android:spacing="0.5dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/umeng_xp_gallery_pointer" android:background="#22000000" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/umeng_xp_gallery_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/umeng_xp_gallery_errorpage" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:gravity="center" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/umeng_xp_failed_loading" />
+    </RelativeLayout>
+</RelativeLayout>
